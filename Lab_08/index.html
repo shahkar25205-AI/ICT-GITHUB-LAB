@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Student Registration Form</h1>
+
+        <form action="#" method="post" enctype="multipart/form-data">
+
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname"
+                   placeholder="Enter your full name" required>
+
+            <label for="fathername">Father's Name</label>
+            <input type="text" id="fathername" name="fathername"
+                   placeholder="Enter your father's name" required>
+
+            <label for="regno">Registration Number</label>
+            <input type="text" id="regno" name="regno"
+                   placeholder="Enter registration number" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email"
+                   placeholder="example@email.com" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password"
+                   placeholder="Enter password" required>
+
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password"
+                   name="confirm-password"
+                   placeholder="Confirm your password" required>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label>Gender</label>
+            <div class="gender-options">
+                <label>
+                    <input type="radio" name="gender"
+                           value="Male" required> Male
+                </label>
+                <label>
+                    <input type="radio" name="gender"
+                           value="Female"> Female
+                </label>
+                <label>
+                    <input type="radio" name="gender"
+                           value="Other"> Other
+                </label>
+            </div>
+
+            <label for="department">Department</label>
+            <select id="department" name="department" required>
+                <option value="">Select Department</option>
+                <option value="BSSE">BSSE</option>
+                <option value="BSAI">BSAI</option>
+                <option value="BSDS">BSDS</option>
+                <option value="BSCS">BSCS</option>
+            </select>
+
+            <label for="semester">Semester</label>
+            <select id="semester" name="semester" required>
+                <option value="">Select Semester</option>
+                <option value="1st">1st Semester</option>
+                <option value="2nd">2nd Semester</option>
+                <option value="3rd">3rd Semester</option>
+                <option value="4th">4th Semester</option>
+                <option value="5th">5th Semester</option>
+                <option value="6th">6th Semester</option>
+                <option value="7th">7th Semester</option>
+                <option value="8th">8th Semester</option>
+            </select>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone"
+                   placeholder="Enter phone number" required>
+
+            <label for="address">Permanent Address</label>
+            <textarea id="address" name="address"
+                      placeholder="Enter your permanent address"
+                      rows="3" required></textarea>
+
+            <label for="picture">Profile Picture</label>
+            <input type="file" id="picture" name="picture"
+                   accept="image/*" required>
+
+            <div class="terms">
+                <input type="checkbox" id="terms" name="terms"
+                       required>
+                <label for="terms">
+                    I agree to the Terms and Conditions
+                </label>
+            </div>
+
+            <div class="button-group">
+                <button type="submit" class="register-btn">
+                    Register
+                </button>
+                <button type="reset" class="reset-btn">
+                    Reset
+                </button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
