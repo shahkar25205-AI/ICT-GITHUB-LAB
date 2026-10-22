@@ -1,0 +1,136 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 20px;
+}
+.form-container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    color: #1e3a8a;
+    font-size: 28px;
+    text-align: center;
+    margin: 20px 0;
+}
+label {
+    display: block;
+    color: #333333;
+    font-size: 15px;
+    margin: 10px 5px 5px;
+}
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 4px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 4px rgba(37, 99, 235, 0.4);
+}
+
+.gender-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 5px;
+}
+
+.gender-options label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0;
+}
+
+.gender-options input {
+    width: auto;
+    margin: 0;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 10px 5px;
+}
+
+.terms input {
+    width: auto;
+    margin: 0;
+}
+
+.terms label {
+    margin: 0;
+}
+
+/* Button Group */
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin: 15px 5px;
+}
+
+
+button {
+    flex: 1;
+    padding: 5px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Register Button */
+.register-btn {
+    background-color: #2563eb;
+}
+
+.register-btn:hover {
+    background-color: #1d4ed8;
+}
+
+.reset-btn {
+    background-color: #6b7280;
+}
+
+.reset-btn:hover {
+    background-color: #4b5563;
+}
+
+@media (max-width: 620px) {
+    body {
+        padding: 10px;
+    }
+
+    .form-container {
+        margin: 10px auto;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
